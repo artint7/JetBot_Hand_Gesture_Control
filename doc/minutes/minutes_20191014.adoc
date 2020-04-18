@@ -1,0 +1,30 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |14.10.2019
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Märki, Fabian
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+* Project agreement:
+** Discussed several points in the project agreement. Those points have been
+updated and approved under
+https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/merge_requests/8
+
+== Action items
+[options="interactive"]
+
+== Next meeting
+** 28.10.2019 14:00, 5.2A32 or nearby

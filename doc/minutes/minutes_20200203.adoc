@@ -1,0 +1,45 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |03.02.2020
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+=== Demo
+Classification on bot, evtl. Windows
+
+=== Possible use cases for JetBot
+Gesture detection and classification is a perfect use case.
+
+=== Measurement
+There should be metrics implemented in order to measure the pipeline performance end to end.
+A performance measurement to a point of reference would be interesting.
+The dataset for this measurement does not matter. What counts is that one gets a point of reference.
+E.g.: How many pictures have been detected correctly?
+
+Possible questions for the defence:
+
+** How many pictures have been detected correctly?
+** How many pictures have been classified correctly?
+** How was the training conducted systematically?
+** How was the validation conducted systematically?
+** Which parameters have been set?
+** Loss function J: Which regularisation k has been taken?
+** Why is the chosen metric a good choice?
+
+=== SSD Demo and Discussion
+
+== Next meeting
+** 17.02.2020 14:00, 5.2A32 or nearby focus box

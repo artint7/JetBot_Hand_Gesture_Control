@@ -1,0 +1,42 @@
+= Project Timeline
+The project lasts 24 working weeks and includes a total working time of 360 hours per team member.
+Each team member plans to work 15 hours per week in average which leads to the total of 360 hours (24x15).
+
+
+.Project overview
+|===
+|Project week #, Date Tuesday | Difference in weeks actually spent |  Milestone
+
+| 1, 17.09.2019 |0|
+| 2, 24.09.2019 |0|
+| 3, 01.10.2019 |0|
+| 4, 08.10.2019 |0|
+| 5, 15.10.2019 |-1|Parts ordered
+| 6, 22.10.2019 |-1|
+| 7, 29.10.2019 |-1|Parts delivered
+| 8, 05.11.2019 |-2|Project agreement finalized
+| 9, 12.11.2019 |-2|*Milestone 1: Hardware* JetBot assembled
+|Project week   | |
+|10, 26.11.2019 |-2|F-1 Motion, F-2 Video Stream
+|11, 03.12.2019 |-2|
+|12, 10.12.2019 |-2|
+|13, 16.12.2019 |-3|*Milestone 2: First Steps* +
+JetBot can solve first simple problems with object recognition. +
+Already available examples can be used and altered if needed for this milestone.
+|christmas      |-3|
+|christmas      |-3|
+|14, 07.01.2020  |-1|
+|15, 14.01.2020  |-1|F-4 Basic classification
+|16, 21.01.2020  |-1|
+|17, 28.01.2020  | 0|*Milestone 3: Single object(Gesture) classification* +
+F-5 Single object classification +
+(Task 1) Detect object boundaries of objects in picture +
+(Task 2) classify gesture
+|18, 04.02.2019  |1|
+|19, 11.02.2020  |2|
+|20, 18.02.2020  |2|
+|21, 25.02.2020  |3|
+|22, 03.03.2020 |3|*Milestone 4: Multiple object() classification* F-6 Multiple object classification -
+Bounding box over multiple objects, follow one certain object, react to gestures
+|23, 10.03.2020 |4|
+|24, 17.03.2020 |4|*Milestone 5: Project finalized*, How to Guides finalized, Thesis finalized

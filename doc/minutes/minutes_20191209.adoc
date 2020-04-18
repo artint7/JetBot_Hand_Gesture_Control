@@ -1,0 +1,82 @@
+= Meeting notes
+
+|===
+
+s|Date |09.12.2019
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Märki, Fabian
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+* Refund of JetBot parts.
+** The refund will be transferred to Ch. Wenk if possible.
+Otherwise it will be transferred first to M. Graber and then from him to Ch. Wenk.
+
+* Meeting room
+** The next meetings will be held in a focus box for easy access to a monitor.
+
+* Feedback to project team
+** Feedback will be provided by the supervisors if something is missing or not clear enough.
+
+* Problem statement
+** Problem/goal of the project is still a bit vague.
+Which problem should be solved and which need should be satisfied?
+** Goal: Jetson Nano / JetBot platform shall be evaluated.
+*** How can the platform be leveraged to evaluate problems of autonomous systems?
+*** What are the capabilities of the platform?
+*** Identify existing use cases and expand at least one of them.
+** The bot should drive around and explore its surroundings.
+It should identify objects and interact with those.
+** One should get insights into an autonomous system.
+** The bot should act as a Demo for external visitors at FHNW.
+It should showcase the abilities of the platform.
+** (Optional) Could the Jetson Nano be used to participate in machine learning contests?
+
+* Main focus clarifications
+** Machine learning part may be based on pretrained networks.
+These could be enhanced with own custom layers.
+** The main goal is to implement a meaningful machine learning task.
+This does not have to be done with a completely new data set (rather unrealistic).
+** The result should be easily understandable and reproducible within a week's time.
+** Target audience: Lecturers and students who already visited a beginners machine learning course.
+-> Not every term has to be explained in detail.
+** Solve one task/problem that could stand for a whole class of problems as an example.
+** Explain what the state of the art is right now for the specific task and what selection of models would make sense for the task.
+What are the best models right now?
+** The mobile aspect has to be included as it's a robot that drives around.
+** Interaction with the bot would be cool but is not necessary.
+Think of a demo case that could be of interest to FHNW visitors.
+** Master a set of tasks.
+** List of possible tasks: https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/blob/dev/doc/task_selection/tasks.adoc
+** List of existing community projects: https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/blob/dev/doc/task_selection/projects_jetson_nano.adoc
+** List of existing data sets: https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/blob/dev/doc/task_selection/datasets.adoc
+
+* https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/blob/dev/doc/admin/project_overview.adoc[Logging of hours]
+** It's ok if more work is logged than budgeted.
+This will not influence the grade negatively.
+
+* https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/issues/11[Thesis titles]
+** Possibles titles will be sent to supervisors.
+They will have a look at them until the next meeting.
+
+* Interim presentation
+** According to M. Graber an interim presentation is not needed.
+This would only be necessary for external customers.
+
+== Action items
+[options="interactive"]
+* [x] Create a list of possible titles
+* [x] Share the list of possible tasks
+
+== Next meeting
+** 16.12.2019 14:00, 5.2A32 or nearby focus box

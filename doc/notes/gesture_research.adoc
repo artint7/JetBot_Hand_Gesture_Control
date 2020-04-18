@@ -1,0 +1,365 @@
+# Gestures
+
+This file contains an aggregation of datasets, example projects and scientific papers about the topic gesture recognition.
+
+This document is a notebook and as such a work in progress. It can be used as an inspiration.
+
+## Gesture Classification
+
+.Projects
+|===
+|Link | Description | Notes
+
+|https://developer.nvidia.com/embedded/community/jetson-projects[jetson projects]
+|all jetson projects
+|
+
+|https://github.com/mit-han-lab/temporal-shift-module +
+PROJECT OF THE MONTH NOVEMBER 2019
+|Video
+|
+
+|https://github.com/nickbild/shaides/[shaides] +
+PROJECT OF THE MONTH OCTOBER 2019
+|Effect change in your surroundings by wearing these AI-enabled glasses. ShAIdes is a transparent UI for the real world.
+Model 1 (CNN): gestures, 2 classes, trained on 19,500 images:
+arm: Images of an arm and the flat in the background
+misc: images of the flat
+
+Model 2 (CNN), objects, 3 classes, trained on 13,700 image:
+Google home box: images of google home box near the tv.
+Lamp: Lamp from different angles
+misc: igamges of the flat without lamp and google home box
+Pytorch
+5 frames per second.
+|nice but rather simple
+
+|Sign language http://blog.faucher.net/2019/06/cloud-machine-learning-train-in-cloud.html[Blog] +
+PROJECT OF THE MONTH SEPTEMBER 2019
+|Worked with digits, trained in the cloud, no code had to be written +
+utilized data from
+https://github.com/loicmarie/sign-language-alphabet-recognizer[sign language] +
+|
+
+
+|SLR Alphabet Recognizer, 2017
+https://github.com/loicmarie/sign-language-alphabet-recognizer[sign alphabet]
+|29 classes including pictures of "nothing" +
+2000 images per class +
+image background is always the same
+cumbersome image processing due to older tensorflow version +
+uses transfer learning utilizing https://github.com/xuetsing/image-classification-tensorflow[this repo]
+using https://ai.googleblog.com/2016/03/train-your-own-image-classifier-with.html[Inception V3]
+- good demo script +
+- 3 years old, old code +
+- no background noise in pictures +
+- mobilenet is better then inceptionV3 in speed and accuracy
+|good
+
+|https://github.com/dusty-nv/jetson-inference[jetson inference]
+|general repo to utilise existing models
+|maybe helpful
+
+|https://github.com/mokpi/Rock-Paper-Scissors-with-Jetson-Nano[rock paper scissors]
+|3 Classes (rock, paper, sissors) with only 50 images per class +
+very basic model +
+Pytorch
+|
+
+|https://github.com/tensorflow/examples/blob/master/lite/examples/gesture_classification/android/README.md[android] +
+https://www.tensorflow.org/lite/examples[tf lite]
+|
+|interesting, using android
+
+|https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html[google] +
+https://mediapipe.readthedocs.io/en/latest/[mediapipe]
+|using mediapipe framework, google
+|very good,
+but looks like a blackbox
+
+|https://github.com/Prasad9/Classify-HandGesturePose[handgestue pose]
+|using handcrafted gesture descriptions +
+forked from https://github.com/lmb-freiburg/hand3d[hand3d]
+|interesting
+
+|https://github.com/ferhat00/Deep-Learning/tree/master/Transfer%20Learning%20CNN[github.com/ferhat00]
+|Transfer learning with mobilenet
+|good
+
+|===
+
+.Datasets
+|===
+|Link | Description | Notes
+
+|http://mclab.citi.sinica.edu.tw/dataset/lared/lared.html[lared]
+|is a large RGB-D hand gesture dataset that provides ~240,000 tuple images
+81 classes, 3000 images each, noisy background
+(color image, a depth image, and a mask of the hand region).
+|very good
+
+|https://sites.google.com/view/handgesturedb/home[tinyhands]
+|This dataset [47] has been captured in two distinct setup environments.
+Half of the dataset has been recorded with a simple background and the rest
+with a complex background. The complex background undergoes various
+illumination conditions with a highly cluttered environment.
+|very good
+
+|https://www.kaggle.com/muhammadkhalid/sign-language-for-alphabets[kaggle letter] +
+https://www.kaggle.com/muhammadkhalid/sign-language-for-numbers[kaggle number]
+|simple background and very good illumination
+25 classes, 1500 images each
+|good
+
+|https://www.kaggle.com/koryakinp/fingers[fingers]
+|background noise, 28000 pictures
+simple background and very good illumination
+|good
+
+|https://www.kaggle.com/datamunge/sign-language-mnist[mnist-sing-language]
+|107 notebooks
+simple signs with no noise, 28x28
+|ok
+
+|https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset[sign-language]
+|3 notebooks
+|ok
+
+|===
+
+.Scientific papers
+|===
+|Link | Description | Notes
+
+|http://d.researchbib.com/f/0nnJcwp21wYzAioF9xo2AmY3OupTIlpl9ALKWwnQVjZGxiIwuWZmVjZGx0Av5jMTL.pdf[paper]
+|2019, Recognition of American Sign Language using Image Processing and Machine Learning +
+The depth sensors
+|
+
+|https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs190353[paper]
+| 09 October 2019, has to be purchased, Impact of machine learning techniques on hand gesture recognition+
+Single Shot Multi Box Detection (SSD) structure utilized to detect hand while Convolutional Neural Network (CNN) is utilized for prediction.
+|very good
+
+|https://arxiv.org/ftp/arxiv/papers/1805/1805.06618.pdf[paper]
+|2018, Transfer learning MobileNet for gesture recognition +
+interesting also "Optimization of a retrained model for Mobile Environment"
+MobileNet_v1_0.50_224 model and InceptionV3
+Best: MobileNet 95% on 24 classes, no background noise
+|very good
+
+|Mobilenet transferlearning +
+https://arxiv.org/ftp/arxiv/papers/1805/1805.06618.pdf[paper] +
+How to use mobilenet +
+https://towardsdatascience.com/transfer-learning-using-mobilenet-and-keras-c75daf7ff299[towardsdatascience] +
+https://keras.io/applications/#mobilenet[keras mobilenet] +
+|mobilenet and inceptionV3 transferlearning for signs mnist, 95% acc
+|very good
+
+| http://oa.upm.es/50817/1/INVE_MEM_2017_268387.pdf[paper]
+| In this paper, a deep convolutional neural network is proposed to
+directly classify hand gestures in images without any
+segmentation or detection stage that could discard the irrelevant
+not-hand areas.
+Uses tinyHands dataset
+https://sites.google.com/view/handgesturedb/home[dataset]
+97.1
+|good
+
+
+|===
+
+
+### Hand Detection
+
+.Papers
+|===
+|Link | Description | Notes
+
+|SSD
+https://arxiv.org/abs/1512.02325[ssd]
+https://arxiv.org/pdf/1512.02325.pdf[ssd pdf]
+
+|have been designed for speed, but their detection accuracy is considerably
+less than that of two-stage methods [23]. These one-stage detectors skip
+the region proposal stage for the detection of foreground candidates and run both
+tasks simultaneously using a dense sampling of possible locations.
+with code: https://github.com/weiliu89/caffe/tree/ssd[github]
+very good (fast) vor detection
+|very good
+
+|https://ieeexplore.ieee.org/abstract/document/8704839[paper]
+|2019, A Comparison of Skin Detection Algorithms for Hand Gesture Recognition +
+ conclusion: unreliable
+|interesting vor thesis
+
+
+|https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6928637/?report=classic[paper]
+A Deep Learning-Based End-to-End Composite System for Hand Detection and Gesture Recognition
+|Deep Learning Based Hand Detection
+in Cluttered Environment Using Skin Segmentation*
+http://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w11/Roy_Deep_Learning_Based_ICCV_2017_paper.pdf[paper]
+Although hand detection using CNN-based methods significantly improves the detection accuracy,
+it yields this good accuracy at a high computational expense. An efficient and fast algorithm
+is still required to robustly detect hands in unconstrained scenarios.
+|good for thesis
+
+|https://arxiv.org/abs/1807.05511v2[Object Detection with Deep Learning: A Review]
+https://arxiv.org/pdf/1807.05511v2.pdf[pdf]
+|
+|good for thesis
+
+
+|http://www.csjournals.com/IJITKM/PDF/34-G.R.S.Murthy_R.S.Jadon.pdf[paper]
+|2015, Description of relevance + features for gesture detection
+|
+
+|===
+
+.Projects
+|===
+|Link | Description | Notes
+
+|Yolo V3
+https://github.com/AlexeyAB/darknet[darknet]
+|Data:draw rectangle over hand necessary
+Setup: download darknet.zip from releases follow instructions
+Still having issues using yolov3
+
+https://github.com/YunYang1994/tensorflow-yolov3[yolo]
+https://github.com/AlexeyAB/yolo2_light[yolo]
+
+yolov2 weights in tensorflow
+https://towardsdatascience.com/track-vehicles-and-people-using-yolov3-and-tensorflow-4f3d0e5b1b5f[yolo]
+https://github.com/Baakchsu/Vehicle-and-people-tracking-with-YOLOv3-[yolo]
+Visual studio C++ build tools required
+opencv
+cython
+tensornets
+
+|maybe good
+
+
+
+|https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models-coco-models[tf model zoo]
+Pretrained Tensorflow detection models
+|No gestures
+|good
+
+
+|https://github.com/victordibia/handtracking[handstracking victor]
+|Real-time Hand-Detection using Neural Networks (SSD) on Tensorflow.
+|very good +
+could be used as baseline for detection
+
+|Tersorflow object detection API
+https://github.com/tensorflow/models/tree/master/research/object_detection[github]
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/[doc]
+https://stackoverflow.com/questions/54396398/pretrained-object-detection-models-in-keras[keras has no pretrained models]
+https://github.com/tensorflow/models/tree/master/research/object_detection/models/keras_models[keras models]
+|https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md[available checkpoints]
+|very good
+
+|https://towardsdatascience.com/custom-object-detection-using-tensorflow-from-scratch-e61da2e10087[towards data science]
+|Custom Object Detection using TensorFlow from Scratch
+|good
+
+|https://www.curiousily.com/posts/object-detection-on-custom-dataset-with-tensorflow-2-and-keras-using-python/[RetinaNet with Keras]
+|Tutorial to use Tensorflow Detection API
+|ok
+
+|https://github.com/pierluigiferrari/ssd_keras[ssd keras]
+https://github.com/mattroos/ssd_tensorflow2[ssd keras TF2.0]
+https://github.com/pierluigiferrari/data_generator_object_detection_2d/blob/master/data_generator_tutorial.ipynb[kerad datagenerator]
+|
+|very good
+
+|https://github.com/KerasKorea/KerasObjectDetector[yolk]
+|Object Detection for Keras,  seems good at first, but isn't flexible nor well documented
+|ok
+
+
+|https://github.com/tzutalin/labelImg[labelimg]
+|tool for adding bounding boxes to images
+|very good
+
+
+|https://github.com/NVIDIA/DeepLearningExamples/tree/master/PyTorch/Detection/SSD[Pytorch SSD Nvidia]
+|Large repository, well maintained but steep learning curve
+|good
+
+|https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html[pytorch detection original fastrnn]
+|Original Pytorch detection tutorial, only with FastRNN and no Eval Loss calculation
+|very good
+
+|https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection#implementation[ssd custom]
+|Custom Pytorch SSD Implementation, only hardly adaptable for other datasets
+|good
+
+|https://medium.com/fullstackai/how-to-train-an-object-detector-with-your-own-coco-dataset-in-pytorch-319e7090da5[pytorch ssd simplified]
+|Original Pytorch Tutorial simplified and further explained
+|very good
+
+|https://www.learnopencv.com/faster-r-cnn-object-detection-with-pytorch/[fasterrnn]
+|fasterrnn pytorch
+|good
+
+|https://medium.com/@smallfishbigsea/understand-ssd-and-implement-your-own-caa3232cd6ad[ssd medium]
+|ideas simple, implementation hard
+|
+
+|https://pypi.org/project/torch-ssd/[ssd for linux]
+|
+|good
+
+|===
+
+
+.Datasets
+|===
+|Link | Description | Notes
+
+|http://vision.soic.indiana.edu/projects/egohands/[egohands]
+|very good for hand detection
+|very good
+
+|http://mclab.citi.sinica.edu.tw/dataset/lared/lared.html[lared]
+|is a large RGB-D hand gesture dataset that provides ~240,000 tuple images
+81 classes, 3000 images each, noisy background
+(color image, a depth image, and a mask of the hand region).
+|very good
+
+
+|https://sites.google.com/view/handgesturedb/home[tinyhands]
+|This dataset [47] has been captured in two distinct setup environments.
+Half of the dataset has been recorded with a simple background and the rest
+with a complex background. The complex background undergoes various
+illumination conditions with a highly cluttered environment.
+|good
+
+
+|http://www.robots.ox.ac.uk/~vgg/data/hands/[vff hands]
+|Dataset
+|very good
+
+|https://www.kaggle.com/danmoller/keras-training-with-float16-test-kernel-2[keras float 16]
+|
+|
+
+
+|===
+
+
+.Theoretical Background
+|===
+|Link | Description | Notes
+
+|https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173[medium]
+|Precision, Recall, Ap, MaP
+|good
+
+|https://pytorch.org/tutorials/beginner/saving_loading_models.html[pytorch]
+|pytorch params description
+|good
+
+|===

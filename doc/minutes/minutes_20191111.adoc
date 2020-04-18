@@ -1,0 +1,64 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |11.11.2019
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Märki, Fabian
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+* Done so far
+** According to project plan on 12.11.2019 has to be assembled. This has been achieved with the exception of the wide angle objective.
+
+* On 26.11.2019 The Requirements F-1 Motion and F-2 Video Stream have to be completed.
+**F-2 has been completed with the file https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/blob/478c7e9c8bd168735aa3027bf4294443d249f455/examples/basics/video.ipynb
+** F-1 Motion works fine but has to be documented better to be considered done
+
+* On 16.12.2019 Milestone 2: First Steps
+JetBot can solve first simple problems with object recognition.
+Already available examples can be used and altered if needed for this milestone.
+** We’ve been working on this tasks the last two weeks
+
+* Also done in the last two weeks:
+*** Setup working environment: Jupiter Server on Jetson Nano vs. Local in Pycharm
+*** Software installed on jetson: thesis, Jetson Nano Performance
+*** Setup Conda environment on local device
+*** Worked through examples on Jetson Nano: Motion, Video, Teleoperation, Object Following
+*** Modified some scripts. Demo: Object classification via live video feed
+*** Added tensorflow examples. Tested locally and on jetbot. Installed Tensorflow-gpu 2.0 locally and updated to tensorflow-gpu 19.9 on Jetson Nano. Version 19.3 was already been preinstalled.
+
+* Order receipts collected and total amount calculated.
+*** Ready for hand in and payback.
+*** Camera lens has been ordered and is currently shipping from AliExpress.
+
+-> Receipts will be handed in by Mr. Graber
+
+*** Checked the existing projects on Nvidia page. Started with an overview: file. Projects with Pytorch mostly very simple and close to default examples E.g: Finding-path-in-maze-of-traffic-cones. Projects based on Tensorflow often complex, build witch more than just jetson nano like gpu-enabled-kubernets-cluster. But also “fruit classification”, “pose estimation”.
+
+* Next meeting on 09.12. ok? We plan to work on a block course for the next two weeks until the 25.11.2019. After that we will continue with the jetbot.
+
+
+
+
+== Action items
+[options="interactive"]
+* [ ] Specify a project goal that the Jetbot has to chase under changing conditions
+* [ ] Specify a task that will be chased after the explorative phase.
+Choose from the list that has been created in the explorative phase.
+E.g. a task that has a meaning for the future development for the platform
+* [ ] Create a list of technical problems during the explorative phase
+* [x] Create a time booking statement of the hours logged so far
+
+== Next meeting
+** 09.12.2019 14:00, 5.2A32 or nearby

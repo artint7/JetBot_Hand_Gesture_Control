@@ -1,0 +1,65 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |07.10.2019
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+* FHNW Maker Studio restrictions (1 printer/student, OpenLab opening hours)
+
+* Project agreement:
+** Current state of the project agreement discussion
+*** Add material list as artifact
+*** Content analysis part of the thesis: +
+Machine-learning-driven device that can drive around. +
+What kind of task do we want to solve? +
+What is a realistic easy-to-use task for this bot? +
+Show that you understood the relevant aspects. +
+Understand and describe selected classifications and metrics. +
+But still very explorative work. How does the device work, +
+what sensor information do you get? +
+How can you control the device? +
+How do you get picture information to work with?
+
+** Use cases and requirements discussion
+*** What's missing: Motion control → +
+It takes an instruction how the robot should drive around. +
+Example: How does he drive around in an arena and recognize numbers? +
+What is the robot's strategy when it drives around in the arena? → +
+Autonomous Motion
+*** Pre-trained models can be used and are encouraged
+*** Basic requirement: classify handwritten digits
+*** Advanced requirement: recognize and classify different lego bricks or other objects
+*** Very advanced requirement: recognize multiple different lego bricks or other objects +
+ in one image by segmenting the image into multiple parts from the live video feed
+*** Bringing own ideas for JetBot functionalities are encouraged
+** Project plan discussion
+*** Project plan is good as it is. milestones could be defined more detailed for the final version
+*** Working with gitlab issues and milestones is good
+
+
+* Order for JetBot
+** Availability of parts: Possible to ship from international shops (Adafruit)?
+** Selected mixture variant where most parts are ordered in switzerland and some abroad.
+
+* Assessment criteria
+*** Assessment criteria weights are all right as is. They will be discussed further +
+with Fabian Märki for the final version
+
+== Action items
+[options="interactive"]
+
+
+== Next meeting
+** 14.10.2019 14:00, 5.2A32 or nearby

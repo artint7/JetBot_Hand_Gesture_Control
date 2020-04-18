@@ -1,0 +1,71 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |17.02.2020
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Märki, Fabian
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+
+* Questions
+** Deadline Thesis 20.03.2020 ok? https://www.cs.technik.fhnw.ch/prostud/ext/Termine
+** Final presentation Length, Language? → Language possibly dependant on expert
+** Final presentation between 13.04.2020 till 24.04.2020 ok?
+** How to Guides (assmble jetbot and run inference or also repeat training? +
+→ Possibly clone GitHub Wiki and add adjustments +
+→ Jupyter Notebook is ok +
+→ Also collect data and repeat training, only with final selected version
+
+* done in the last two weeks
+
+** proof of concept added > three models (hand detection, gesture classification, collision avoidance)
+running simultaneously with 3 fps)
+
+** keras detection (vgg ssd) deployed on jetbot > not good enough
+*** running with with 1 fps
+*** custom layer need to be installed on jetbot
+*** optimisation not possible due to custom layers
+
+** pytorch tutorials finished and faster rcnn deployed on jetbot > not good enough
+*** mobilenet classification implemented in pytorch,
+*** mobilenet can be optimized with torch2trt
+*** data preparation custom with pytorch
+*** fast rcnn is the only detection model directly supported by torchvision  https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html
+*** fastrcnn deployed on jetbot 1 fps
+*** optimization with torch2trt not possible since not implemented yet
+
+** pytorch ssd mobilenet
+*** tried several projects, failed to implement ssd in pytorch
+https://github.com/NVIDIA/DeepLearningExamples/tree/master/PyTorch/Detection/SSD[Pytorch SSD Nvidia]
+can very big repository with many requirements, hard to understand
+*** other (https://pypi.org/project/torch-ssd/[ssd for linux],
+https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection#implementation[ssd custom])
+ssd pytroch implementation work only on linux or cant be easely altered for custom datasets
+
+** Tensorflow Object Detection API > successful implemented, good enough
+*** No official support for Windows, most features work with some hacks,
+but on windows the gpu isn’t always detected correctly
+https://stackoverflow.com/questions/59157700/tensorflow-object-detection-api-tf-2-0-gpu-not-working[open issue on github]
+*** Used Ubuntu successfully
+**** TFAPI uses custom .record format, implemented
+**** TPAPI uses custom .config files to run training
+**** MobilenetV2_SSD .config written and training exucuted
+**** training with tf1, inference with tf2
+*** Runs with 4 fps on jetbot
+
+== Action items
+[options="interactive"]
+
+== Next meeting
+** Next Meeting: 02.03.2020 14.00

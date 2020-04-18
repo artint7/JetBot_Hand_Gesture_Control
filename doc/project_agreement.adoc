@@ -1,0 +1,307 @@
+= Project agreement
+
+*Authors:* Dimitri Muralt, Christoph Wenk +
+*Principal and supervisor:* Michael Graber +
+*Co-supervisor:* Fabian Märki
+
+== Introduction
+
+This document acts as agreement between the principal Michael Graber, who also takes the responsibility as advisor,
+the Co-supervisor Fabian Märki
+and the project team, consisting of Dimitri Muralt and Christoph Wenk.
+The document contains contact data as well as general information about the project schedule and scope.
+It also determines what has to be completed by the end of the project.
+
+This agreement is based on the project description _I4DS13_Project_description_Jetbot_Nano.pdf_ as well as the meetings
+on 16. September 2019 and 7. October 2019.
+
+== Base line
+
+Mobile, autonomous bots enable a number of interesting use cases and are under heavy development.
+Often, simple rule-based and more complex machine learning supported decision-methods get combined to enable
+unobstructed, target-oriented movements.
+
+Nvidia has recently published instructions how to build a small, autonomous vehicle leveraging
+their Jetson Nano developer kit.
+
+Jetson Nano and JetBot seem to be a very adequate way to explore and develop mobile, machine learning based
+applications.
+
+== Goals
+
+The goal of this project is to build a JetBot and implement simple examples for the programmatic control of the JetBot.
+The JetBot should be able to solve simple tasks by leveraging its machine learning capabilities including object recognition.
+
+== Problem statement
+
+Since the instructions how to build the JetBot and use the Jetson Nano developer kit have been
+published just recently it isn't clear how well suitable the platform is for usage in education and what
+the capabilities of the JetBot are.
+
+With this project the platform shall be evaluated showcasing the capabilities of the JetBot.
+For this purpose the JetBot has to be built first according to
+Nvidia's https://github.com/NVIDIA-AI-IOT/jetbot[documentation on GitHub]
+and afterwards programmed. A task, which contains an object-recognition-step using machine learning,
+shall be solved. As an example the JetBot could detect Lego bricks or hand-written numbers in a room and execute
+an appropriate action like move them to a certain location or update an inventory.
+
+== Deliverables
+
+This chapter describes the artifacts to be created and delivered during the project.
+
+.Artifacts
+|===
+|Artifact | Content (not necessarily chapters)
+
+|Project agreement
+a|
+- Base line
+- Goals
+- Problem statement
+- Functional- / Non-functional requirements
+- Product application
+- Project planning
+- Approval & Permission
+
+|Thesis
+a|
+- Key aspects
+- Approach
+- Analysis
+- Architecture
+- Technologies & Software
+- Conclusion
+
+|How-to guides
+a|
+- Step-by-step descriptions
+- Material list
+
+|Hardware
+a|
+- Assembled functional JetBot
+
+|Software
+a|
+- Produced code for JetBot
+
+|===
+
+
+== Requirements
+
+=== Functional requirements
+.Functional requirements
+|===
+|#| Title | Description | Priority
+
+|F-1
+|Motion
+|JetBot is assembled and capable to move on even ground
+|high
+
+|F-2
+|Video Stream
+|JetBot streams video data live with built-in  camera.
+|high
+
+|F-3
+|Motion control
+|JetBot has a strategy to move around on the ground suitable to the problem to be solved. This
+includes self-driving strategies and possibly manual control via keyboard.
+|high
+
+|F-4
+|Basic classification
+|JetBot is capable to solve a classification problem with the help of a trained machine learning model
+e.g. classify hand written digits.
+|high
+
+|F-5
+|Single object classification
+|JetBot is capable to recognize an object (e.g. lego brick) and classify it (e.g. size) from the video feed
+with the help of a trained machine learning model. It's enough to recognize only one object at a time and no image
+segmentation is needed.
+|high
+
+|F-6
+|Multiple object detection
+|JetBot is capable to detect one or multiple objects on an image with the help of image segmentation
+ (e.g. three lego bricks) and classify it (e.g. size) from the video feed
+with the help of a trained machine learning model.
+|medium
+
+|F-7
+|Real world task
+|JetBot solves a simple real word task with the help of a trained machine learning model
+including an object recognition step.
+|medium
+
+|F-8
+|How to guide hardware
+|A how to guide is available with which the JetBot can be assembled completely.
+|high
+
+|F-9
+|How to guide software
+|A how to guide is available with which central JetBot functionalities can be recreated.
+|high
+
+|===
+
+=== Non-functional requirements
+
+.Non-functional requirements
+|===
+|# | Description
+
+|NF-1
+|The documentation shall be written in English
+
+|NF-2
+|The JetBot has to be assembled by the project team. Including the 3D printing.
+
+|NF-3
+|Python based machine learning libraries shall be used for the project.
+
+|NF-4
+|Nvidia Jetson Nano shall be used as underlying platform.
+
+|===
+
+== Product application
+=== Range of applications
+
+The product shall act as a prototype to show what is possible with the Jetson Nano platform.
+It will display the capabilities of the JetBot with a simple machine learning example task.
+
+The finished JetBot can help lecturers to decide if the platform is suitable for their classes.
+
+=== Target audience
+
+The target audience are lecturers, particularly at FHNW.
+
+== Project planning
+The project planning consists of https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/-/milestones[milestones]
+and https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/issues[issues] on GitLab.
+The milestones contain delivery dates and are linked to issues.
+An agile approach is preferred and project planning is being kept to a minimum.
+
+A rough project plan is also delivered in this agreement to give an overview of the project milestones.
+
+The project lasts 24 working weeks and includes a total working time of 360 hours per team member.
+Each team member plans to work 15 hours per week in average which leads to the total of 360 hours (24x15).
+
+.Project overview
+|===
+|Week #, Date Tuesday | Milestone
+
+|38, 17.09.2019
+|
+
+|39, 24.09.2019
+|
+
+|40, 01.10.2019
+|
+
+|41, 08.10.2019
+|
+
+|42, 15.10.2019
+|Parts ordered
+
+|43, 22.10.2019
+|
+
+|44, 29.10.2019
+|Parts delivered
+
+|45, 05.11.2019
+|Project agreement finalized
+
+|46, 12.11.2019
+|*Milestone 1: Hardware* +
+JetBot assembled
+
+|Project week
+|
+
+|48, 26.11.2019
+|F-1 Motion +
+F-2 Video Stream
+
+|49, 03.12.2019
+|
+
+|50, 10.12.2019
+|
+
+|51, 16.12.2019
+|*Milestone 2: First Steps* +
+JetBot can solve first simple problems with object recognition. +
+Already available examples can be used and altered if needed for this milestone.
+
+|christmas
+|
+
+|christmas
+|
+
+|2, 07.01.2020
+|
+
+|3, 14.01.2020
+|F-4 Basic classification
+
+|4, 21.01.2020
+|
+
+|5, 28.01.2020
+|*Milestone 3: Single object classification* +
+F-5 Single object classification
+
+|6, 04.02.2019
+|
+
+|7, 11.02.2020
+|
+
+|8, 18.02.2020
+|
+
+|9, 25.02.2020
+|
+
+|10, 03.03.2020
+|*Milestone 4: Multiple object classification* +
+F-6 Multiple object classification
+
+|11, 10.03.2020
+|
+
+|12, 17.03.2020
+|*Milestone 5: Project finalized* +
+How to Guides finalized +
+Thesis finalized
+
+
+|===
+
+=== Meetings
+A weekly slot for face-to-face meetings is being reserved on Monday from 14.00 - 15.00.
+If there is no need for a meeting, it can be cancelled by both sides with a short notification in advance.
+Additional questions can always be asked on GitLab by creating an issue and the @User function.
+Meetings can also be held on Skype if needed.
+
+== Approval & Permission
+This project agreement sets out the objectives and conditions for the IP-6 project I4DS13: Jetbot Kick-Off.
+This document serves as a contractual basis between the aforementioned parties.
+
+This agreement will be accepted by all parties with the
+https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/merge_requests/8[merge request]
+to the master branch of the GitLab
+repository https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot with all parties involved approving the merge.
+
+Changes to this document are possible if they are accepted by all parties. Those changes
+have to be approved again via a merge request with all parties as reviewer on GitLab.

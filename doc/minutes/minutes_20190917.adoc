@@ -1,0 +1,75 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |16.09.2019
+
+s|Time |16.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Märki, Fabian
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+=== Administration
+
+* Fabian Märki is also involved in the project. However, Michael Graber remains the contact person
+and is solely responsible for the grading and administration. Fabian Märki is to be informed.
+* Communication channel and frequency.
+** Meeting slot weekly 14:00-15:00, next meeting 7.10.2019.
+** Frequency is adjusted to the needs. Partly Skype possible.
+** Gitlab Issues can also be used for communication. Professor is to be addressed with @name, so that an automatic notification is created.
+* Documentation will be written in English. Documentation will be written in
+asciidoc and the newest version is always available on gitlab under the “doc” branch.
+Fabian Märki would like to see a few readme’s.
+* Deliverables:
+** Projektvereinbarung in Asciidoc (definitive version after ⅓ of time):
+** Rough project planning
+** Work packages (Scope Machine Learning Task)
+** Approximate project content (E.g. Build, Install software, Machine Learning,...)
+
+=== Technical
+
+* Goals and Problem of the work still not very clear.
+“JetBot einfache Aufgaben unter Verwendung von Machine Learning lösen lassen”.
+The project description says what tasks have to be executed but not clearly what
+the aim is and what problem has to be solved.
+This is due to the explorative character of the topic, it’s about proof of principle.
+Questions to be answered are: What is Jetbot capable of? What problems can be solved? Important tasks can lead to step by step guide.
+-> The goal and scope have to be clarified in the “Projektvereinbarung”.
+The students may defines the tasks for the jetbot themselves.
+Ideas from the professors:
+** Jetbot can move around an arena and search for handwritten numbers and recognize and classify those
+** Jetbot can recognize lego stones and collect those in a specified area
+
+* Is thera a research question? It its necessary?
+example of explorative research question:
+How can machine learning be used to solve a practicle problem with jetbot and jetson nano?
+
+* Constraints: Tools, Processes, Hardware
+Libraries / Frameworks to use: Keras, TensorFlow
+Jetbot advantages: multiple neuronal networks parallel
+Courses: book "Deep learning with python - Francois Chollet"
+Coursera: TensorFlow in Practice // Machine Learning, Andrew Ng // https://www.coursera.org/specializations/deep-learning
+
+* Budet: To be clarified
+
+* Development environment? PyCharm vs. Jupiter Notebook
+** Mix of pycharm and Jupiter notebook
+** At the end a python package has to be created → PyCharm
+
+== Action items
+[options="interactive"]
+* [ ] Pre-fill Bewertungsbogen
+* [ ] Put together order for JetBot
+* [ ] Organize Ultimaker Course
+
+== Next meeting
+** 7.10.2019 14:00, 5.2A32 or nearby

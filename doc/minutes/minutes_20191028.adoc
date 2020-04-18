@@ -1,0 +1,36 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |28.10.2019
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Märki, Fabian
+* Muralt, Dimitri
+
+|===
+
+== Discussion items
+
+* Project agreement
+** Project agreement has been approved during the meeting by all parties.
+** Comment by supervisor: The comments by supervisors in the merge request "project agreement" have been too low level,
+e.g. spelling mistakes. Supervisors will contribute to the project on a higher level. Things like spelling mistakes
+will be subject to assessment and will not be corrected by supervisors.
+
+* Done so far
+** Two complete JetBots have been assembled. JetBot can move and video stream works.
+Issues during setup are noted here:
+https://gitlab.fhnw.ch/ml/student-projects/2019hs_jetbot/issues/7
+** Outstanding: Wide angle camera.
+
+== Action items
+[options="interactive"]
+
+== Next meeting
+** 11.11.2019 14:00, 5.2A32 or nearby

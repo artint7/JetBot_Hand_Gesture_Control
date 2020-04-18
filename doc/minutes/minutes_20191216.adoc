@@ -1,0 +1,54 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |16.12.2019
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Märki, Fabian
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+*Data sources*
+Some of the data sources of the current selection are based on pictures taken with an infra red camera.
+These sources have to be reevaluated if they really can be used for the task.
+
+The data sources have to be suitable to build an autonomous robot.
+
+*Task*
+The current selection of tasks suit the purpose of a demo case well.
+For the use case of a gesture detection one has to make sure that fitting data sets are available.
+
+Two currently known problems have to be solved. +
+1. Single object classification: Distinguish gestures. +
+--> Gesture 1 vs gesture 2 vs gesture 3. +
+2. Multiple object classification: +
+--> Detect potentially relevant objects (gestures):
+--> Combine object detection and object classification
+
+The bot control API needs to be looked into further.
+
+Object following might prove to be more suitable as demo case implementation.
+E.g. Show a cup --> follow cup --> interrupt current task with gesture --> switch state
+
+Make sure to separate between classification and boundary detection --> 2 separate tasks
+
+== Action items
+[options="interactive"]
+* [ ] Optimize gesture classification model for jetson nano
+* [ ] @ChristophWenk Thesis part 1
+* [ ] @ChristophWenk Implement JetBot actions according to detected gesture
+* [ ] @DimitriMuralt Detect object boundaries of objects in picture (F5)
+* [ ] @DimitriMuralt Classify gesture (F-4)
+
+== Next meeting
+** 13.01.2020 14:00, 5.2A32 or nearby focus box

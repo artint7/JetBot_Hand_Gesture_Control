@@ -1,0 +1,360 @@
+= Brainstorming potential JetBot tasks and datasets
+
+This list includes ideas for potential tasks for the JetBot. It also includes fitting datasets.
+More potential datasets can be found in a second table at the end of this document.
+
+This document is a notebook and as such a work in progress. It can be used as an inspiration.
+
+== Potential JetBot tasks
+.Tasks
+|===
+| Task | Dataset | Notes
+
+
+|Recognize handwritten digits
+|https://www.tensorflow.org/datasets/catalog/mnist[minst]
+|
+
+|Detect multiple handwritten digits
+|https://www.tensorflow.org/datasets/catalog/mnist[minst]
+|
+
+|Solve/check simple mathematical calculations
+|https://www.tensorflow.org/datasets/catalog/mnist[minst] +
++ - = missing data
+|
+
+|*Task 1*: Gesture, detect and classify hand signs
+|https://www.kaggle.com/gti-upm/leapgestrecog[Hand Gesture Recognition Database] +
+https://www.kaggle.com/datamunge/sign-language-mnist[Sign Language MNIST] +
+https://www.kaggle.com/koryakinp/fingers[Fingers] +
+|Good for controlling, train ourselves +
+E.g. stop, start, shutdown
+
+|Rock, paper, scissor
+|https://www.tensorflow.org/datasets/catalog/rock_paper_scissors[rps TF]
+|
+
+|Detect a face
+|https://www.tensorflow.org/datasets/catalog/wider_face[wider face TF]
+|
+
+|Hide and seek, Jetbot searches faces or persons and drives to them
+|https://www.tensorflow.org/datasets/catalog/wider_face[wider face TF]
+|
+
+|Face mimic, jetbot detects faces and classifies the mood
+|https://www.tensorflow.org/datasets/catalog/wider_face[wider face TF] +
+https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset[kaggle face expression]
+|
+
+|Common objects, inventory of a room
+|https://www.tensorflow.org/datasets/catalog/cifar100[cifar100 TF]
+|
+
+|Find an object: Show a known object to JetBot and let it search it
+|https://www.tensorflow.org/datasets/catalog/cifar100[cifar100 TF]
+|
+
+|Collision avoidance
+|https://www.tensorflow.org/datasets/catalog/lost_and_found[lost and found TF]
+|Use existing examples
+
+|Collistion avoidance by steering left and right according to position of obstacle
+|https://www.tensorflow.org/datasets/catalog/lost_and_found[lost and found TF] +
+https://www.cityscapes-dataset.com/examples/[cityscapes]
+|
+
+|Fast and secure driving in flat, depth estimation determines speed
+|https://www.tensorflow.org/datasets/catalog/dmlab[dmlab TF]
+|
+
+|Lego classification
+|https://www.kaggle.com/pacogarciam3/lego-brick-sorting-image-recognition[lego-brick-sorting]
+|
+
+|Lego finder, e.g. show a lego and JetBot searches for similar lego's
+|https://www.kaggle.com/pacogarciam3/lego-brick-sorting-image-recognition[lego-brick-sorting]
+|
+
+|*Task 2*: Road Following
+|
+|Train ourselves, Transfer learning +
+(Lego road + recognize Lego bricks while driving +
+eventually react to certain Lego bricks, e.g stop or move the to the side)
+
+|Object Following
+|
+|Current state of the art, use existing models +
+Control witch, follow a certain object while detecting multiple
+
+|===
+
+
+
+
+
+.Tasks probably difficult to implement
+|===
+| Task | Dataset | Notes
+
+|Check mathematical calculations in a childrens notebook
+|
+|
+
+|Recognize patterns like multiple simple forms
+|
+|
+
+
+|Jetbot poses calculation, answer via camera or with handwritten numbers or fingers
+|
+|
+
+|Machine learning autopilot, drive around with JetBot for a certain time, after that the JetBot mimimcs the driving behaviour
+|
+|
+
+|Recognize cash money and count it
+|
+|
+
+|Search paper-clip with a magnet
+|
+|
+
+|===
+
+== Datasets potentially usable for JetBot tasks
+
+.Datasets potentially usable for JetBot tasks
+|===
+|Link | Description | Notes
+
+|https://www.kaggle.com/c/facial-keypoints-detection[Facial Keypoints]
+Kaggle
+|Each predicted keypoint is specified by an (x,y) real-valued pair in the space of pixel indices. There are 15 keypoints, which represent the following elements of the face:
+left_eye_center, right_eye_center, ...
+|
+
+|https://www.tensorflow.org/datasets/catalog/overview[Tensorflow dataset overview]
+|
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/binary_alpha_digits[Alpha Digits] TF
+|Binary 20x16 digits of '0' through '9' and capital 'A' through 'Z'. 39 examples of each class.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/caltech101[Caltech101] TF
+|Caltech-101 consists of pictures of objects belonging to 101 classes,
+plus one background clutter class. Each image is labelled with a single object.
+Each class contains roughly 40 to 800 images, totalling around 9k images.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/cifar10[cifar10] TF
+|The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class.
+There are 50000 training images and 10000 test images.
+Classes:airplane automobile bird cat deer dog frog horse ship truck
+|
+
+
+
+|https://www.tensorflow.org/datasets/catalog/cifar100[cifar100] TF
+|This dataset is just like the CIFAR-10, except it has 100 classes containing 600 images each.
+Classes like animals, plants, fruits, furniture
+|Maybe useful
+
+
+|https://www.tensorflow.org/datasets/catalog/cycle_gan[cycle_gan] TF
+|A dataset consisting of images from two classes A and B (For example: horses/zebras, apple/orange,...)
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/dmlab[dmlab] TF
+|The Dmlab dataset contains frames observed by the agent acting in the DeepMind
+Lab environment, which are annotated by
+the distance between the agent and various objects present in the environment.
+The goal is to is to evaluate the ability of a visual model to reason about
+distances from the visual input in 3D environments. The Dmlab dataset consists
+of 360x480 color images in 6 classes. The classes are {close, far, very far}
+x {positive reward, negative reward} respectively.
+|Interesting for driving, early collision avoidance
+
+
+|https://www.tensorflow.org/datasets/catalog/emnist[emnist] TF
+|The EMNIST dataset is a set of handwritten character digits derived from the NIST Special Database 19 and converted to a 28x28 pixel image format and dataset structure that directly matches the MNIST dataset.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/fashion_mnist[fashion_mnist] TF
+|Fashion-MNIST is a dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/food101[food101] TF
+|This dataset consists of 101 food categories, with 101'000 images. For each class, 250 manually reviewed test images are provided as well as 750 training images. On purpose, the training images were not cleaned, and thus still contain some amount of noise. This comes mostly in the form of intense colors and sometimes wrong labels. All images were rescaled to have a maximum side length of 512 pixels.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/imagenet2012[imagenet2012]
+Huge, a lot to explore
+http://image-net.org/small/download.php[downsampled]
+|ILSVRC 2012, aka ImageNet is an image dataset organized according to the WordNet hierarchy. Each meaningful concept in WordNet, possibly described by multiple words or word phrases, is called a "synonym set" or "synset". There are more than 100,000 synsets in WordNet, majority of them are nouns (80,000+). In ImageNet, we aim to provide on average 1000 images to illustrate each synset. Images of each concept are quality-controlled and human-annotated. In its completion, we hope ImageNet will offer tens of millions of cleanly sorted images for most of the concepts in the WordNet hierarchy.
+|Pobably userful to take already trained models due to huge data volumes
+
+
+|https://www.tensorflow.org/datasets/catalog/imagenet_resized[imagenet downsampled]
+|https://github.com/PatrykChrabaszcz/Imagenet32_Scripts/blob/master/map_clsloc.txt[Label List]
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/lfw[labeled faces] TF
+|13233 images, 5749 people, Labeled Faces in the Wild: A Database for Studying Face Recognition in Unconstrained Environments
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/lost_and_found[lost_and_found] TF
+|The LostAndFound Dataset addresses the problem of detecting unexpected small obstacles on the road often caused by lost cargo.
+The dataset comprises 112 stereo video sequences with 2104 annotated frames (picking roughly every tenth frame from the recorded data).
+|Potentially useful for collision avoidance
+
+
+|https://www.tensorflow.org/datasets/catalog/mnist[mnist] TF interesting
+|The MNIST database of handwritten digits.
+|Well prepared and known dataset, useful for handwritten digits
+
+
+|https://www.tensorflow.org/datasets/catalog/omniglot[omniglot] TF
+|Omniglot data set for one-shot learning. This dataset contains 1623 different handwritten characters from 50 different alphabets.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/quickdraw_bitmap[quickdraw_bitmap] TF
+|The Quick Draw Dataset is a collection of 50 million drawings across 345 categories, contributed by players of the game Quick, Draw!.
+The bitmap dataset contains these drawings converted from vector format into 28x28 grayscale images
+|Interesting, could be used for a drawing game
+
+
+|https://www.tensorflow.org/datasets/catalog/rock_paper_scissors[rock papler scissors] TF
+|Images of hands playing rock, paper, scissor game.
+|Useful for rock, paper, scissor game
+
+
+|https://www.tensorflow.org/datasets/catalog/scene_parse150[scene_parse150] TF
+|Scene parsing is to segment and parse an image into different image regions associated with semantic categories, such as sky, road, person, and bed. MIT Scene Parsing Benchmark (SceneParse150) provides a standard training and evaluation platform for the algorithms of scene parsing.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/shapes3d[shapes3d] TF
+|3dshapes is a dataset of 3D shapes procedurally generated from 6 ground truth independent latent factors. These factors are floor colour, wall colour, object colour, scale, shape and orientation.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/smallnorb[smallnorb] TF
+|This database is intended for experiments in 3D object recognition from shape.
+It contains images of 50 toys belonging to 5 generic categories: four-legged animals,
+human figures, airplanes, trucks, and cars. The objects were imaged by two cameras
+under 6 lighting conditions, 9 elevations (30 to 70 degrees every 5 degrees),
+and 18 azimuths (0 to 340 every 20 degrees).
+|Maybe interesting for toy recognition, only 5 classes
+
+
+|https://www.tensorflow.org/datasets/catalog/sun397[sun397] TF
+|Scene categorisation. The database contains 108,753 images of 397 categories,
+used in the Scene UNderstanding (SUN) benchmark. The number of images varies
+across categories, but there are at least 100 images per category.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/svhn_cropped[svhn_cropped]
+|The Street View House Numbers (SVHN) Dataset is an image digit recognition dataset
+of over 600,000 digit images coming from real world data. Images are cropped to 32x32.
+|Maybe useful for digit recognition, not handwritten
+
+|===
+
+
+
+.Oject Detection, bounding boxes
+|===
+|Link | Description | Notes
+
+
+|https://www.tensorflow.org/datasets/catalog/coco[coco] TF
+|Detection
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/open_images_v4[open_images_v4] TF
+|Open Images is a dataset of ~9M images that have been annotated with image-level labels and object bounding boxes.
+The training set of V4 contains 14.6M bounding boxes for 600 object classes on 1.74M images, making it the largest existing dataset with object location annotations. The boxes have been largely manually drawn by professional annotators to ensure accuracy and consistency. The images are very diverse and often contain complex scenes with several objects (8.4 per image on average). Moreover, the dataset is annotated with image-level labels spanning thousands of classes.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/voc[voc] TF
+|his dataset contains the data from the PASCAL Visual Object Classes Challenge 2012, a.k.a. VOC2012, corresponding to the Classification and Detection competitions. A total of 11540 images are included in this dataset, where each image contains a set of objects, out of 20 different classes, making a total of 27450 annotated objects. In the Classification competition, the goal is to predict the set of labels contained in the image, while in the Detection competition the goal is to predict the bounding box and label of each individual object. WARNING: As per the official dataset, the test set of VOC2012 does not contain annotations.
+|
+
+
+|https://www.tensorflow.org/datasets/catalog/wider_face[wider face] TF
+|Face detection
+|Interesting, face detection and possibly face recognition with another model
+
+|===
+
+.Lego Kaggle overview
+|===
+|Link | Description | Notes
+|
+|https://www.kaggle.com/search?q=lego+in%3Adatasets[Lego Kaggle overview]
+|
+
+
+|https://www.kaggle.com/joosthazelzet/lego-brick-images[Lego Brick]
+|That is why I turned to computer rendering of the bricks using Blender.
+|Many different lego bricks, probably too many
+
+
+|https://www.kaggle.com/pacogarciam3/lego-brick-sorting-image-recognition[Lego Brick Sorting ]
+|20 Classes of Lego Bricks and 4,580 Images total for Classification
+|Probably useful for lego, classification, only artificially generated data
+
+
+|https://www.kaggle.com/brunoqueiroz/lego-bricks-3-classes[Lego bricks 3 classes]
+|Seems to be not useful
+|
+
+|===
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

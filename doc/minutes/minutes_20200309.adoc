@@ -1,0 +1,57 @@
+= Kick-Off Meeting
+
+|===
+
+s|Date |02.03.2020
+
+s|Time |14.00
+
+s|Location |5.2A32
+
+s|Attendees a|
+* Graber, Michael
+* Märki, Fabian
+* Muralt, Dimitri
+* Wenk, Christoph
+
+|===
+
+== Discussion items
+
+
+* **General questions**
+** Does the thesis need to be printed and bound? Send a copy to the expert? +
+-> Send by e-mail to supervisors, they will forward it
+** When should the JetBot hardware handed in? +
+-> Hardware hand in is at the 23. of March
+** Does a room need to be booked?
+-> Room is already booked: 5.3C08, 16. April, 10.15 - 11.15 +
+-> Unfortunately, F. Märki is not able to participate
+
+* ** Specific questions**
+** How to proceed with artifacts of failed experiments? +
+-> Delete, unless referenced in thesis
+
+* ** Thesis walkthrough**
+** General feedback good +
+-> ToC covers the relevant topics +
+-> Should cover topics "Needed knowledge/Theory", "Implementation", "Results", "Evaluation/Interpretation"
+** Evaluation +
+-> It is not enough to just say "The product works". The results have to be reflected an compared to existing results if possible
+** Description of system as a whole is not visible in ToC +
+-> Should be described somewhere in the beginning +
+-> JetBot: Hardware, Software, Use Case -> What does the JetBot do? Where is our solution deployed? Add a photo of the JetBot
+** Suggestion: Move chapter "Example projects" into chapter "The Jetson Nano Developer Kit" as a section
+** Suggestion: Remove third level from ToC
+
+* **Presentation**
+** Target audience: Students, people with proficient IT knowledge
+** Show results, path to results, demo, etc.
+
+== Action items
+[options="interactive"]
+* [ ] Hand in JetBot hardware at the next meeting
+
+
+== Next meeting
+** Next Meeting: 16.03.2020 14.00
